@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Date Displayer</title> 
+    </head>
+
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 600px;
+            width: 150px;
+            height: 50px;
+            color: black;
+            background-color: #adcdee;
+            font-size: 20px;
+        }
+
+        h2{
+            margin-left: 550px;
+            color: black;
+            font-size:  'Roboto', sans-serif;
+            font-size: 40px;
+        }
+
+        footer{
+            margin-top: 20px;
+            text-align: center;
+            color: black;
+            font-size:  'Roboto', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <body>
+        <h2>Date Displayer</h2>
+        <button id="display">Display Date</button>
+
+
+        <footer>
+            <span>Follow My Handles</span>
+            <a href="https://twitter.com/malikobansa">Twitter</a>
+            <a href="https://www.instagram.com/malikobansa/">Instagram</a>
+            <a href="https://web.facebook.com/abdulmalikmuhamma/">Facebook</a>
+            <a href="https://www.linkedin.com/in/muhammad-abdulmalik-0a2226242/">LinkedIn</a>
+            <a href="https://www.youtube.com/channel/UCGUtnccOmm1h4dmF-l_YHjg">Youtube</a>
+            <a href="https://github.com/malikobansa">Github</a>
+        </footer>
+    </body>
+
+    <script>
+        var display = document.getElementById('display')
+
+        display.addEventListener('click', () => {
+        const date = new Date();
+        document.write(date);
+        })
+
+        display.style.textAlign="center";
+    </script>
+</html>
